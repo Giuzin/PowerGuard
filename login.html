@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGuard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 100%);
+            background-image: url('../FrontPower/img/fundo1.png'), url('../FrontPower/img/fundo2.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #8EC7E1; 
+            background-image: url('../FrontPower/img/fundo1.png'), url('../FrontPower/img/fundo2.png');
+            background-size: cover;
+            background-position: center;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-image {
+            width: 100px;  
+            height: 100px; 
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #5b61a8; 
+            color: #feffff; 
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #2e3977;
+        }
+        .error-message {
+            color: #FF0000;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        .remember-me input {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+        .success-message {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #28a745; /* Cor verde */
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="login-container">
+        <img src="img/LogoPower.png" alt="Logo" class="login-image">
+        <form id="loginForm" class="form-group">
+            <input type="text" id="username" class="form-control" placeholder="Nome de usuário" required>
+            <input type="password" id="password" class="form-control" placeholder="Senha" required>
+            <div class="remember-me">
+                <input type="checkbox" id="rememberPassword">
+                <label for="rememberPassword" class="text-white">Salvar senha</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="background-color: #f0ce2f; color: #feffff;">Entrar</button>
+        </form>
+        <div id="errorMessage" class="error-message"></div> 
+        <div id="successMessage" class="success-message" style="display: none;"></div> 
+    </div>
+
+    <script src="js/login.js" defer></script>
+</body>
+</html>
