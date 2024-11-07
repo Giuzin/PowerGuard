@@ -7,11 +7,17 @@ let barChart, pieChart;
 verificarToken();
 
 function verificarToken(){
+    const accessToken = localStorage.getItem("accessToken");
+
+    if(!accessToken){
+        window.location.href = "login.html";
+    }
+
     fetch(serverURL, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${localStorage.getItem("accessToken")}`
+            "Authorization": `Bearer ${accessToken}`
         }
     })
     .then(response => {
