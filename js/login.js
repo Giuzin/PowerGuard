@@ -1,4 +1,4 @@
-const serverURL = "http://54.172.89.130:3000/api/v1/auth/signin";
+const serverURL = "http://54.172.89.130/api/v1/auth/signin";
 
 document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();

@@ -1,6 +1,6 @@
 import { refreshToken } from './refresh.js';
 
-const serverURL = "http://54.172.89.130:3000/api/v1/energy/history";
+const serverURL = "http://54.172.89.130/api/v1/energy/history";
 
 let barChart, pieChart;
 
