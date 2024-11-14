@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGuard - Sobre a Empresa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8EC7E1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #2c3e50;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            background-color: #f0ce2f;
+            color: #feffff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #f0ce2f;
+            color: #feffff;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .login-container {
+            width: 100%;
+            color: #fff;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #8EC7E1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px #f0ce2f;
+        }
+
+        .p-login {
+            color: #fff;
+            text-align: center;
+
+        }
+        ul li a {
+        color: black;
+        text-decoration: none; /* Remove o sublinhado */
+        cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+        }
+
+        ul li a:hover {
+        color: gray; /* Cor ao passar o mouse, opcional */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="./img/LogoPower.png" alt="Logo PowerGuard" class="logo">
+        </div>
+        <h1>Bem-vindo ao PowerGuard!</h1><br>
+        <h3>Quem somos nós?</h3>
+        <p>
+            A PowerGuard é uma plataforma de monitoramento inteligente de consumo elétrico,
+            projetada para transformar a maneira como empresas e residências gerenciam sua energia.
+            Combinamos tecnologia avançada, dashboards interativos e análises preditivas para fornecer
+            insights detalhados sobre o consumo energético, promovendo eficiência, sustentabilidade e economia.
+        </p><br>
+        <h3>O que nos diferencia?</h3>
+        <p>
+            Nossos usuários têm acesso a uma interface intuitiva que oferece
+            uma visão clara de padrões de consumo diários, semanais e mensais. Alertas automáticos notificam
+            em caso de consumo elevado ou além dos limites, ajudando nossos clientes a agir rapidamente
+            para evitar desperdícios e custos inesperados.
+        </p>
+        <p>
+            Além disso, com nossa tecnologia de machine learning, geramos relatórios preditivos que
+            estimam custos futuros e oferecem recomendações práticas para otimizar o uso de energia.
+            Escolher a PowerGuard significa não apenas reduzir custos operacionais, mas também adotar
+            práticas inteligentes e sustentáveis.
+        </p><br>
+
+        <h3>Agradecemos o seu interesse!</h3>
+        <p>
+            Confie na PowerGuard para gerenciar sua conta de energia com eficiência e segurança.
+            Transformamos dados em decisões, tornando a gestão de energia simples e acessível.
+        </p><br>
+        <h3>GitHub dos Colaboradores do PowerGuard</h3><br>
+        <ul>
+            <li><a href="https://github.com/Giuzin" target="_blank" style="color: black;">Giuliano Pires</a></li>
+            <li><a href="https://github.com/GabriellaSouzaa" target="_blank" style="color: black;">Gabriella Souza</a></li>
+            <li><a href="https://github.com/JoaoPalazzolli" target="_blank" style="color: black;">Joao Palazzolli</a></li>
+            <li><a href="https://github.com/Teberges" target="_blank" style="color: black;">Arthur Teberges</a></li>
+            <li><a href="https://github.com/Chiardelli" target="_blank" style="color: black;">Lais Chiardelli</a></li>
+            <li><a href="https://github.com/rodrigo-castilho" target="_blank" style="color: black;">Rodrigo Castilho</a></li>
+        </ul>
+        
+
+        <div class="login-container">
+            <p class="p-login">
+            <h5>Enquanto isso, comece a usar nossas soluções sem nenhum custo! 🥳</h5>
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="redirectToLogin()">VEM TESTAR GRÁTIS</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+
+</html>

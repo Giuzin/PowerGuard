@@ -1,15 +1,15 @@
 import { refreshToken } from './refresh.js';
 
-const serverURL = "http://54.172.89.130/api/v1/energy/history";
-
 let barChart, pieChart;
+
+const serverURL = "http://54.172.89.130/api/v1/energy/history";
 
 verificarToken();
 
-function verificarToken(){
+function verificarToken() {
     const accessToken = localStorage.getItem("accessToken");
 
-    if(!accessToken){
+    if (!accessToken) {
         window.location.href = "login.html";
     }
 
@@ -20,14 +20,14 @@ function verificarToken(){
             "Authorization": `Bearer ${accessToken}`
         }
     })
-    .then(response => {
-        if (response.status == 401) {
-            refreshToken();
-        }
-    })
-    .catch(error => {
-        console.error("Erro ao fazer requisição:", error);
-    });
+        .then(response => {
+            if (response.status == 401) {
+                refreshToken();
+            }
+        })
+        .catch(error => {
+            console.error("Erro ao fazer requisição:", error);
+        });
 }
 
 function gerarDadosAleatorios() {
@@ -208,19 +208,19 @@ function showDeviceDetails(device) {
     let deviceImage = '';
     switch (device.type) {
         case 'Ar Condicionado':
-            deviceImage = '<img src="ar.png" alt="Imagem do Ar Condicionado" class="device-image1">';
+            deviceImage = '<img src="./img/ar.png" alt="Imagem do Ar Condicionado" class="device-image1">';
             break;
         case 'Iluminação':
-            deviceImage = '<img src="luz.png" alt="Imagem da Iluminação" class="device-image2">';
+            deviceImage = '<img src="./img/luz.png" alt="Imagem da Iluminação" class="device-image2">';
             break;
         case 'Computador':
-            deviceImage = '<img src="computador.png" alt="Imagem do Computador" class="device-image3">';
+            deviceImage = '<img src="./img/computador.png" alt="Imagem do Computador" class="device-image3">';
             break;
         case 'Geladeira':
-            deviceImage = '<img src="geladeira.png" alt="Imagem da Geladeira" class="device-image4" >';
+            deviceImage = '<img src="./img/geladeira.png" alt="Imagem da Geladeira" class="device-image4" >';
             break;
         default:
-            deviceImage = '<img src="geladeira.png" alt="Imagem da Geladeira" class="device-image4" >';
+            deviceImage = '<img src="./img/geladeira.png" alt="Imagem da Geladeira" class="device-image4" >';
     }
 
     deviceInfo.innerHTML = `
