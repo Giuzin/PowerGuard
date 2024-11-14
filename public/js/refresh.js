@@ -1,4 +1,4 @@
-const serverURL = "http://54.172.89.130/api/v1/auth/refresh";
+const serverURL = "https://powerguard.sellts.online/api/v1/auth/refresh";
 
 export function refreshToken(){
     fetch(serverURL, {

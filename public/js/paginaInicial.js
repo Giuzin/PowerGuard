@@ -2,7 +2,7 @@ import { refreshToken } from './refresh.js';
 
 let barChart, pieChart;
 
-const serverURL = "http://54.172.89.130/api/v1/energy/history";
+const serverURL = "https://powerguard.sellts.online/api/v1/energy/history";
 
 verificarToken();
 
