@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #77b2ce;
+    background-image: url('../FrontPower/img/fundo1.png'), url('../FrontPower/img/fundo2.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background-color: #8EC7E1; 
+    background-image: url('../FrontPower/img/fundo1.png'), url('../FrontPower/img/fundo2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 3.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid white;
+}
+.login-image {
+    width: 100px;  
+    height: 100px; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background-color: #5b61a8; 
+    color: #feffff; 
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #2e3977;
+}
+.error-message {
+    color: #FF0000;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1rem;
+    color: white;
+}
+.remember-me input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+.success-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745; /* Cor verde */
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}

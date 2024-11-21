@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerGuard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        
+    </style>
 </head>
-
-<body class="body-login">
+<body>
     <div class="login-container">
-        <img src="./img/LogoPower.png" alt="Logo" class="login-image">
+        <img src="img/LogoPower.png" alt="Logo" class="login-image">
         <form id="loginForm" class="form-group">
-            <input class="input-login" type="text" id="username" class="form-control" placeholder="Nome de usuário"
-                required>
-            <input class="input-login" type="password" id="password" class="form-control" placeholder="Senha" required>
+            <input type="text" id="username" class="form-control" placeholder="Nome de usuário" required>
+            <input type="password" id="password" class="form-control" placeholder="Senha" required>
             <div class="remember-me">
-                <input class="input-login" type="checkbox" id="rememberPassword">
+                <input type="checkbox" id="rememberPassword">
                 <label for="rememberPassword" class="text-white">Salvar senha</label>
             </div>
-            <button class="button-login" type="submit" class="btn btn-primary btn-lg"
-                style="background-color: #f0ce2f; color: #feffff;">Entrar</button>
+            <button type="submit" class="btn btn-primary btn-lg" style="background-color: #f0ce2f; color: #feffff;">Entrar</button>
         </form>
-        <div id="errorMessage" class="error-message"></div>
-        <div id="successMessage" class="success-message" style="display: none;"></div>
+        <div id="errorMessage" class="error-message"></div> 
+        <div id="successMessage" class="success-message" style="display: none;"></div> 
     </div>
 
-    <script src="js/login.js" defer></script>
+   <script src="js/login.js"></script>
 </body>
-
 </html>

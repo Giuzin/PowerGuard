@@ -4,69 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerGuard - Sobre a Empresa</title>
+    <title>PowerGuard - Landing Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sobrenos.css">
 </head>
 
-<body class="body-sobrenos">
-    <div class="container-sobrenos">
-        <div class="logo-container-sobrenos">
-            <img src="./img/LogoPower.png" alt="Logo PowerGuard" class="logo">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">PowerGuard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('about')">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('features')">Diferenciais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contato</a>
+                </li>
+            </ul>
         </div>
-        <h1 class="h1-sobrenos">Bem-vindo ao PowerGuard!</h1><br>
-        <h3 class="h3-sobrenos">Quem somos nós?</h3>
-        <p class="p-sobrenos">
-            A PowerGuard é uma plataforma de monitoramento inteligente de consumo elétrico,
-            projetada para transformar a maneira como empresas e residências gerenciam sua energia.
-            Combinamos tecnologia avançada, dashboards interativos e análises preditivas para fornecer
-            insights detalhados sobre o consumo energético, promovendo eficiência, sustentabilidade e economia.
-        </p><br>
-        <h3 class="h3-sobrenos">O que nos diferencia?</h3>
-        <p class="p-sobrenos">
-            Nossos usuários têm acesso a uma interface intuitiva que oferece
-            uma visão clara de padrões de consumo diários, semanais e mensais. Alertas automáticos notificam
-            em caso de consumo elevado ou além dos limites, ajudando nossos clientes a agir rapidamente
-            para evitar desperdícios e custos inesperados.
-        </p>
-        <p class="p-sobrenos">
-            Além disso, com nossa tecnologia de machine learning, geramos relatórios preditivos que
-            estimam custos futuros e oferecem recomendações práticas para otimizar o uso de energia.
-            Escolher a PowerGuard significa não apenas reduzir custos operacionais, mas também adotar
-            práticas inteligentes e sustentáveis.
-        </p><br>
-
-        <h3 class="h3-sobrenos">Agradecemos o seu interesse!</h3>
-        <p class="p-sobrenos">
-            Confie na PowerGuard para gerenciar sua conta de energia com eficiência e segurança.
-            Transformamos dados em decisões, tornando a gestão de energia simples e acessível.
-        </p><br>
-        <h3 class="h3-sobrenos">GitHub dos Colaboradores do PowerGuard</h3><br>
-        <ul>
-            <li><a href="https://github.com/Giuzin" target="_blank" style="color: black;">Giuliano Pires</a></li>
-            <li><a href="https://github.com/GabriellaSouzaa" target="_blank" style="color: black;">Gabriella Souza</a>
-            </li>
-            <li><a href="https://github.com/JoaoPalazzolli" target="_blank" style="color: black;">Joao Palazzolli</a>
-            </li>
-            <li><a href="https://github.com/Teberges" target="_blank" style="color: black;">Arthur Teberges</a></li>
-            <li><a href="https://github.com/Chiardelli" target="_blank" style="color: black;">Lais Chiardelli</a></li>
-            <li><a href="https://github.com/rodrigo-castilho" target="_blank" style="color: black;">Rodrigo Castilho</a>
-            </li>
-        </ul>
-
-
-        <div class="login-container-sobrenos">
-            <p class="p-login-sobrenos">
-            <h5 class="h5-sobrenos">Enquanto isso, comece a usar nossas soluções sem nenhum custo! 🥳</h5>
+    </nav>
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Bem-vindo ao PowerGuard!</h1>
+            <p>
+                Transforme a maneira como você gerencia sua energia com nossa solução avançada de monitoramento
+                inteligente. Dashboards interativos, relatórios preditivos e alertas em tempo real, tudo em um só lugar!
             </p>
-            <div class="btn-container-sobrenos">
-                <button class="btn-sobrenos" onclick="redirectToIndex()">VEM TESTAR GRÁTIS</button>
+            <div class="btn-container">
+                <button class="btn" onclick="redirectToIndex()">COMECE AGORA</button>
             </div>
+        </div>
+        <img src="img/LogoPower.png" alt="logo">
+    </div>
+    <div id="home" class="content-section">
+        <div class="img-energia">
+            <img src="img/energia.png" alt="Energia">
         </div>
     </div>
 
+    <div id="about" class="content-section" style="display: none;">
+        <div>
+            <h2>Sobre Nós</h2>
+            <p>
+                Somos uma equipe dedicada a desenvolver soluções tecnológicas que promovem eficiência, sustentabilidade
+                e inovação. Nosso compromisso é transformar a maneira como empresas e residências gerenciam seus
+                recursos energéticos, criando ferramentas práticas e inteligentes que entregam resultados reais. Com o
+                PowerGuard, unimos expertise técnica e visão estratégica para oferecer uma solução completa em
+                gestão energética, ajudando nossos clientes a reduzir custos, otimizar processos e contribuir para um
+                futuro mais sustentável. Trabalhamos com foco na excelência e na simplicidade, garantindo que nossas
+                soluções sejam acessíveis, eficientes e alinhadas às necessidades do mundo moderno.
+                <br><br><br>
+
+            <h3>GitHub dos Colaboradores do PowerGuard</h3><br>
+            <ul>
+                <li><a href="https://github.com/Giuzin" target="_blank" style="color: black;">Giuliano Pires</a></li>
+                <li><a href="https://github.com/GabriellaSouzaa" target="_blank" style="color: black;">Gabriella
+                        Souza</a></li>
+                <li><a href="https://github.com/JoaoPalazzolli" target="_blank" style="color: black;">Joao
+                        Palazzolli</a></li>
+                <li><a href="https://github.com/Teberges" target="_blank" style="color: black;">Arthur Teberges</a></li>
+                <li><a href="https://github.com/Chiardelli" target="_blank" style="color: black;">Lais Chiardelli</a>
+                </li>
+                <li><a href="https://github.com/rodrigo-castilho" target="_blank" style="color: black;">Rodrigo
+                        Castilho</a></li>
+            </ul>
+            </p>
+        </div>
+        <img src="img/imgsobrenos.png" alt="Imagem Sobre Nós">
+    </div>
+
+    <div id="features" class="content-section" style="display: none;">
+        <div>
+            <h2>Diferenciais</h2>
+            <p>
+                O principal diferencial do PowerGuard é a combinação de tecnologia avançada com usabilidade prática,
+                oferecendo não apenas monitoramento em tempo real, mas também análises preditivas baseadas em machine
+                learning. Essa abordagem permite antecipar custos e demandas energéticas, capacitando usuários a tomar
+                decisões proativas e estratégicas. Além disso, os alertas automáticos configuráveis e a integração com
+                múltiplos canais de notificação garantem uma resposta ágil a qualquer irregularidade, destacando o
+                sistema como uma solução completa e inovadora no mercado de gestão energética.
+            </p>
+        </div>
+        <img src="img/imgdifere.png" alt="Imagem Diferenciais">
+    </div>
+
+    <footer id="footer" class="footer">
+        <h2>Contato</h2>
+        <p>Email: giuliano.pirrs@gmail.com</p>
+        <p>Telefone: (15) 99115-2557</p>
+    </footer>
+
     <script src="js/sobrenos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
