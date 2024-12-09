@@ -9,9 +9,9 @@ verificarToken();
 function verificarToken() {
     const accessToken = localStorage.getItem("accessToken");
 
-    if (!accessToken) {
-        window.location.href = "login.html";
-    }
+    // if (!accessToken) {
+    //     window.location.href = "login.html";
+    // }
 
     fetch(serverURL, {
         method: "GET",
@@ -325,5 +325,25 @@ function filterData() {
         updatePieChart(originalData);
     }
 }
+const daltonicoButton = document.getElementById('daltonicoToggle');
+const body = document.body;
+let daltonicoMode = false;
+
+daltonicoButton.addEventListener('click', () => {
+    daltonicoMode = !daltonicoMode;
+
+    if (daltonicoMode) {
+        body.style.backgroundColor = '#edf6f9'; // Fundo claro
+        body.style.color = '#1a1a1a'; // Texto escuro
+    } else {
+        body.style.backgroundColor = '#f9f9f9';
+        body.style.color = '#333';
+    }
+});
+document.getElementById('landingPageButton').addEventListener('click', function () {
+    window.location.href = 'sobrenos.html';
+});
+
+
 
 document.getElementById('filterData').addEventListener('click', filterData);

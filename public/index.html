@@ -8,23 +8,31 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="body-index">
     <div class="navbar">
-        <div style="display: flex; align-items: center; margin-top: -250px;">
+        <div style="display: flex; align-items: center; margin-top: -150px;">
             <img src="./img/LogoPower.png" alt="Logo" />
-            <span style="font-size: 20px; color: white;">Powerguard</span>
         </div>
-        <div style="margin-top: -600px;">
+        <div style="margin-top: -300px;">
+            <span style="font-size: 25px; color: white;">Powerguard</span>
             <a href="#" class="nav-link active" data-section="graficos">Gráficos</a>
             <a href="#" class="nav-link" data-section="dispositivos">Dispositivos</a>
             <a href="#" class="nav-link" data-section="relatorios">Relatórios</a>
+            <button id="daltonicoToggle" class="btn btn-custom-dalto">
+                <i class="fas fa-eye" style="margin-right: 8px;"></i>Personalizar</button>
+            <button id="landingPageButton" class="btn btn-custom-landing">
+                <i class="fas fa-link" style="margin-right: 8px;"></i>Landing Page
+            </button>
         </div>
+
     </div>
 
     <div class="main-content">
@@ -70,8 +78,12 @@
                 <p><strong>Dispositivos Ligados:</strong> 3</p>
                 <p><strong>Dispositivos Desligados:</strong> 1</p>
             </div>
+            <img src="./img/img_relatorio.png" alt="Imagem Relatórios" class="report-image">
         </div>
     </div>
+    <footer class="footer">
+        <p>&copy; 2024 Powerguard. Todos os direitos reservados.</p>
+    </footer>
 
     <script type="module" src="js/paginaInicial.js"></script>
 </body>

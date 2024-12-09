@@ -7,101 +7,81 @@
     <title>PowerGuard - Landing Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/sobrenos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">PowerGuard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('home')">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('about')">Sobre Nós</a>
+                    <a class="nav-link" href="#about">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('features')">Diferenciais</a>
+                    <a class="nav-link" href="#features">Diferenciais</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#footer">Contato</a>
                 </li>
+                <li class="nav-item">
+                    <button class="btn btn-sm ml-3 d-flex align-items-center" onclick="showColorOptions()" aria-label="Alterar esquema de cores para daltonismo">
+                        <i class="fas fa-eye" style="margin-right: 8px;"></i> Personalizar
+                    </button>
+                </li>
+                
             </ul>
         </div>
     </nav>
-    <div class="hero-section">
+
+    <div class="hero-section" id="home">
         <div class="hero-text">
-            <h1>Bem-vindo ao PowerGuard!</h1>
-            <p>
-                Transforme a maneira como você gerencia sua energia com nossa solução avançada de monitoramento
-                inteligente. Dashboards interativos, relatórios preditivos e alertas em tempo real, tudo em um só lugar!
-            </p>
+            <h1>Bem-vindo ao PowerGuard! <img src="img/LogoPower.png" alt="Logo PowerGuard" class="logo"></h1>
+            <p>Transforme a maneira como você gerencia sua energia com nossa solução avançada de monitoramento inteligente. Dashboards interativos, relatórios preditivos e alertas em tempo real, tudo em um só lugar!</p>
             <div class="btn-container">
                 <button class="btn" onclick="redirectToIndex()">COMECE AGORA</button>
             </div>
         </div>
-        <img src="img/LogoPower.png" alt="logo">
-    </div>
-    <div id="home" class="content-section">
-        <div class="img-energia">
-            <img src="img/energia.png" alt="Energia">
-        </div>
     </div>
 
-    <div id="about" class="content-section" style="display: none;">
+    <div id="about" class="content-section">
         <div>
             <h2>Sobre Nós</h2>
-            <p>
-                Somos uma equipe dedicada a desenvolver soluções tecnológicas que promovem eficiência, sustentabilidade
-                e inovação. Nosso compromisso é transformar a maneira como empresas e residências gerenciam seus
-                recursos energéticos, criando ferramentas práticas e inteligentes que entregam resultados reais. Com o
-                PowerGuard, unimos expertise técnica e visão estratégica para oferecer uma solução completa em
-                gestão energética, ajudando nossos clientes a reduzir custos, otimizar processos e contribuir para um
-                futuro mais sustentável. Trabalhamos com foco na excelência e na simplicidade, garantindo que nossas
-                soluções sejam acessíveis, eficientes e alinhadas às necessidades do mundo moderno.
-                <br><br><br>
-
-            <h3>GitHub dos Colaboradores do PowerGuard</h3><br>
+            <p>Somos uma equipe dedicada a desenvolver soluções tecnológicas que promovem eficiência, sustentabilidade e inovação. Nosso compromisso é transformar a maneira como empresas e residências gerenciam seus recursos energéticos, criando ferramentas práticas e inteligentes que entregam resultados reais.</p>
+            <h3>GitHub dos Colaboradores do PowerGuard</h3>
             <ul>
-                <li><a href="https://github.com/Giuzin" target="_blank" style="color: black;">Giuliano Pires</a></li>
-                <li><a href="https://github.com/GabriellaSouzaa" target="_blank" style="color: black;">Gabriella
-                        Souza</a></li>
-                <li><a href="https://github.com/JoaoPalazzolli" target="_blank" style="color: black;">Joao
-                        Palazzolli</a></li>
-                <li><a href="https://github.com/Teberges" target="_blank" style="color: black;">Arthur Teberges</a></li>
-                <li><a href="https://github.com/Chiardelli" target="_blank" style="color: black;">Lais Chiardelli</a>
-                </li>
-                <li><a href="https://github.com/rodrigo-castilho" target="_blank" style="color: black;">Rodrigo
-                        Castilho</a></li>
+                <li><a href="https://github.com/Giuzin" target="_blank">Giuliano Pires</a></li>
+                <li><a href="https://github.com/GabriellaSouzaa" target="_blank">Gabriella Souza</a></li>
+                <li><a href="https://github.com/JoaoPalazzolli" target="_blank">Joao Palazzolli</a></li>
+                <li><a href="https://github.com/Teberges" target="_blank">Arthur Teberges</a></li>
+                <li><a href="https://github.com/Chiardelli" target="_blank">Lais Chiardelli</a></li>
+                <li><a href="https://github.com/rodrigo-castilho" target="_blank">Rodrigo Castilho</a></li>
             </ul>
-            </p>
         </div>
         <img src="img/imgsobrenos.png" alt="Imagem Sobre Nós">
     </div>
 
-    <div id="features" class="content-section" style="display: none;">
+    <div id="features" class="content-section">
         <div>
             <h2>Diferenciais</h2>
-            <p>
-                O principal diferencial do PowerGuard é a combinação de tecnologia avançada com usabilidade prática,
-                oferecendo não apenas monitoramento em tempo real, mas também análises preditivas baseadas em machine
-                learning. Essa abordagem permite antecipar custos e demandas energéticas, capacitando usuários a tomar
-                decisões proativas e estratégicas. Além disso, os alertas automáticos configuráveis e a integração com
-                múltiplos canais de notificação garantem uma resposta ágil a qualquer irregularidade, destacando o
-                sistema como uma solução completa e inovadora no mercado de gestão energética.
-            </p>
+            <p>O principal diferencial do PowerGuard é a combinação de tecnologia avançada com usabilidade prática, oferecendo não apenas monitoramento em tempo real, mas também análises preditivas baseadas em machine learning. Essa abordagem permite antecipar custos e demandas energéticas, capacitando usuários a tomar decisões proativas e estratégicas.</p>
         </div>
-        <img src="img/imgdifere.png" alt="Imagem Diferenciais">
+        <img src="img/imgluzesdifere.jpeg" alt="Imagem Diferenciais">
     </div>
 
     <footer id="footer" class="footer">
         <h2>Contato</h2>
-        <p>Email: giuliano.pirrs@gmail.com</p>
-        <p>Telefone: (15) 99115-2557</p>
+        <p>Email: 235298@facens.br</p>
+        <p>Telefone: (15) 99163-5367</p>
     </footer>
 
     <script src="js/sobrenos.js"></script>
